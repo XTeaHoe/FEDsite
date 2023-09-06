@@ -57,6 +57,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -de windows narrator werkt stukke minder goed dan de narrator op de macbooks van mijn klasgenoten
+  -het rotator wiel van de macbook is niet aanwezig op windows, navigeren gaat door middel van lettertoetsen (h voor headers bijv)
+  -dropdown menu's worden niet vanzelf geopend door de narrator
+  -de narrator zegt dat een knop in focus, maar in werkelijkheid is de focus op de verkeerde plek
+  -grote onderdelen worden overgeslagen (tenminste wel op de website die ik ga nabootsen)
+  -navigeren met de pijltjes zorgt ervoor dat je iedere letter individueel verteld krijgt door de narrator
+
+  -buttons en links op de site hebben geen omschrijving
+  -er word geen gebruik gemaakt van ul of il elementen
+  -fotos hebben geen alt, de decoratieve wel
+  -a en button elementen worden niet gebruikt
 
 </details>
 
