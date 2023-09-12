@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.bmw.nl/nl/index.html
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Home Pagina
   <img src="readme-images/main-page.jpg" width="375px" alt="dit is de homepage van BMW Nederland. De eerste pagina die je ziet">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Modellen Pagina
   <img src="readme-images/second-page.jpg" width="375px" alt="dit is de modellen pagina van BMW. Hier zie je alle beschikbare automodellen met verschillende uitvoeringen">
  
 </details>
@@ -79,13 +79,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="../basiswebsite/readme-images/Artboard – 1.png" width="375px" alt="breakdown van de Home pagina">
+  <img src="../basiswebsite/readme-images/Web 1920 – 1.png" width="375px" alt="breakdown van de Modellen pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/BMW menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/BMW Aside.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
