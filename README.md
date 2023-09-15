@@ -100,18 +100,43 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit ging goed:
+  Tijdens de lessen heb ik ontzettend veel geleerd, tot op het punt dat ik vaak wens dat ik dit vak als eerst had gehad qua coderen.
 
+  De html schrijven gaat mij goed af, het is immers makkelijker dan css en js maar ik ben blij dat ik het nog niet kwijt ben van het eerste jaar.
+  <img src="../basiswebsite/readme-images/Capture1.PNG" width="375px" alt="afbeelding van mijn HTML code">
+
+  Bij de breakdownschetsen had ik af een toe moeite om te begrijpen uit welke elementen bepaalde onderdelen bestaan, maar de schetsen maken lukte mij zonder al te veel moeite. Bij de onderstaande foto had ik moeite met het benoemen van de tekstelementen en het feit dat het hele veld om een aside gaat.
+  <img src="../basiswebsite/readme-images/Capture2.PNG" width="375px" alt="Dit is het desbetreffende aside veld">
+
+  Dit ging lastiger:
+  Als het gaat om de css vind ik het lastig om de juiste selectoren te gebruiken, maar ik heb nu wel veel beter begrip van de :nth-of~ selectoren. Voorheen moest ik voor alles ID's en classes gebruiken omdat ik het niet goed begreep.
+  <img src="../basiswebsite/readme-images/Capture3.PNG" width="375px" alt="Een selector die ik voorheen niet begreep hier toegepast">
+
+  De javascript 3 stap opdracht lukte mij niet meteen, maar meeschrijven en notities maken hebben mij ontzettend op weg geholpen.
+
+  Css begrijp ik best goed, alleen ik vind het lastig om te weten waar ik moet beginnen en vooral weten wat ik exact moet typen vind ik nog lastig. Gelukkig zijn dit soort dingen makkelijk te oefenen en word ik hier beter in door het simpelweg te herhalen. Oefening baart kunst.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Karlijn
+  Wanneer afbeelding in html en wanneer is CSS
 
+  Joost
+  mag een h2 in een a?
+  wanneer svg en wanneer een button?
+  mag een ul in een ul?
+  wat zijn handige volgordes van  img p h2 enz.?
+
+  Annika
+
+  Tygo
+  werkt een aside laten uit en inschuiven hetzelfde als de menu opdracht?
+  hoe maak ik een dropdown menu die alle onderstaande content verder omlaag duwt?
+  hoe zorg ik ervoor dat ( checkbox ) filters zich daadwerkelijk toepassen op de artikelen die de website mij zal tonen?
+  hoe zorg ik dat het stuk tekst dat zegt hoeveel resultaten er gevonden zijn zich aanpast afhankelijk van het aantal resultaten?
+  hoe creeër ik "laagjes" waarmee elementen elkaar overlappen door middel van css?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
