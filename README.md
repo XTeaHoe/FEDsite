@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   blauw
 
   #### Je focus:
-  momenteel allebei, kan nog veranderen
+  extra aandacht voor de surface laag
  
 </details>
 
@@ -141,10 +141,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - veel van mijn vragen worden in komende lessen uitgelegd
+  - veel van de codepends hebben bruikbare code in de rode en zwarte piste opgaven
+  - filters hoef ik niet uit te werken
 
 </details>
 
@@ -164,20 +163,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Karlijn
+afwezig
 
+Joost
+afwezig
+
+Annika
+hoe kan ik mijn details/summary stijlen dat het plusje aan de andere kant staat?
+hoe krijg ik mijn img geheel te zien? en mag ik los een img er in zetten?
+
+Tygo
+heb ik goed gebruik gemaakt van sections, ul en li in mijn html?
+hoe spreek ik elementen aan die diep genesteld zijn (in een li in een ul in een section in de main bijv)
+is het nodig voor mij om img elementen in een a te zetten wanneer ze op mijn nepsite niet zullen functioneren als een a?
+hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - er mankeert niet veel aan mijn code, ik moet alleen nog veel doen
+  - ik heb goed advies gekregen als het gaat om selectoren
 
 </details>
 

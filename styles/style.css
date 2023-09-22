@@ -1,36 +1,136 @@
+@font-face {
+  font-family: 'BMW-light';
+  src: url(../fonts/BMWTypeNext-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'BMW-reg';
+  src: url(../fonts/BMWTypeNext-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'BMW-bold';
+  src: url(../fonts/BMWTypeNext-Bold.woff2) format('woff2');
+}
+
 /**************/
 /* CSS REMEDY */
 /**************/
+
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;  
 }
 
-
-
-
-
+body {
+  background-color: #6e6e6e;
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-white:#ffffff;
+  --color-lightgrey:#f6f6f6;
+  --color-darkgrey:#666666;
+  --color-black:#262626;
+  --color-blue:#1C69D4;
+  --color-pureblack:#000000;
 }
 
+ul{
+  list-style: none;
+  padding: 0%;
+}
 
+main section{
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
 
+main{
+  font-family: BMW-light,Arial;
+  color: var(--color-white);
+}
 
+h2{
+  text-align: center;
+}
+
+li{
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+img{
+  width: 100%;
+  inset: 1em;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
-main > section:nth-child(2){
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+
+/*main 1e section*/
+
+h1{
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
+
+main section:nth-of-type(1){
+
+}
+
+main section:nth-of-type(1) img{
+  order: -2;
+  z-index: -1;
+  position: relative;
+  left: 0em;
+  top: 0em;
+  padding-bottom: 5em;
+}
+
+main section:nth-of-type(1) h2{
+  position: absolute;
+  top: 9em;
+  font-size: 3em;
+  font-weight: 300;
+  background-image: linear-gradient(transparent 0em, black 1em);
+}
+
+main section:nth-of-type(1) h3{
+font-weight: 100;
+font-size: 1.3em;
+background-color: var(--color-pureblack);
+width: 100%;
+text-align: center;
+}
+
+main section:nth-of-type(1) a{
+
+}
+
+/*main 2e section*/
+
+main section:nth-of-type(2){
+
+}
+
+/*main 3e section*/
+
+
+
+/*main 4e section*/
