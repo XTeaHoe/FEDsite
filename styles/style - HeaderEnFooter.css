@@ -17,8 +17,12 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#494949;
+	--color-white:#ffffff;
+  --color-lightgrey:#f6f6f6;
+  --color-darkgrey:#666666;
+  --color-black:#262626;
+  --color-blue:#1C69D4;
+  --color-pureblack:#000000;
 }
 
 /****************/
@@ -31,6 +35,8 @@ ul{
   list-style: none;
   padding: 0%;
 }
+
+/*header*/
 
 header{
   position: absolute;
@@ -70,20 +76,64 @@ nav a:first-of-type {
   flex-grow: 1;
 }
 
+/*footer*/
+
 footer{
-  font-family: BMW-light,Arial;
-  color: var(--color-white);
+  font-family: BMW-bold,Arial;
+  font-weight: 900;
+  color: var(--color-black);
 }
 
-footer :nth-child(2) ul:nth-child(3) {
+/*1e section*/
+
+footer section:nth-of-type(1){
+  padding-left: 3em;
+  padding-right: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 2em;
+}
+
+footer section:nth-of-type(1) h2{
+  font-family: BMW-light,Arial;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+footer section:nth-of-type(1) a{
+grid-row-start: 2;
+grid-column-start: 1;
+font-size: 0.9em;
+text-decoration: none;
+color: var(--color-black);
+}
+
+footer section:nth-of-type(1) a:nth-of-type(2){
+  grid-row-start: 2;
+grid-column-start: 2;
+}
+
+/*2e section*/
+
+footer section:nth-of-type(2){
+  margin-top: 1em;
+  padding-top: 2em;
+  background-color: var(--color-lightgrey);
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(2) {
   display: flex;
 }
 
 footer :nth-child(2) h2{
   clip-path: inset(50%);
-  height: 1px;
+  height: 1%;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  width: 1%;
 }
+
