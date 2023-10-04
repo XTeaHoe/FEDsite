@@ -130,6 +130,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   wat zijn handige volgordes van  img p h2 enz.?
 
   Annika
+  had geen vragen doorgestuurd
 
   Tygo
   werkt een aside laten uit en inschuiven hetzelfde als de menu opdracht?
@@ -198,6 +199,8 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  -nog niet alles maar wel heel veel elementen worden opgenoemd door de narrator en ook op de juiste volgorde
+  -dropdown menu's worden niet vanzelf geopend door de narrator
 
 </details>
 
@@ -217,12 +220,21 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Karlijn
+  Hoe krijg ik bepaalde gradients op bepaalde plekken?
+  Hoe maak ik het toegankelijker met leesbaarheid?
 
+  Joost
+  Hoe maak ik mijn nav zo dat hij alleen te zien is als je naar boven scrolt?
+
+  Annika
+  Hoe kan ik met een button(en toggle) de img veranderen? is een formulier toevoegen ook een goed ding voor de surface plane?
+
+  Tygo
+  Hoe maak ik een filter menu die functioneerd als overlay?
+  Hoe zorg ik dat het sorteren op bmw serie net zo werkt als op de voorbeeld site (met animatie, donkere achtergrond etc)?
+  Is het noodzakelijk voor mij om het informatie tabje uit te werken bij de modellen? Ook met volledige overlay?
+  Hoe maak ik een vergelijkbare overlay voor de detail pop up van een auto model?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

@@ -16,22 +16,258 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;  
 }
 
 body {
-  background-color: #797979;
+  background-color: var(--color-white);
 }
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#494949;
+	--color-white:#ffffff;
+  --color-lightgrey:#f6f6f6;
+  --color-darkgrey:#666666;
+  --color-black:#262626;
+  --color-blue:#1C69D4;
+  --color-pureblack:#000000;
+}
+
+ul{
+  list-style: none;
+  padding: 0%;
+}
+
+li{
+  list-style: none;
+}
+
+main{
+  padding: 1.5em;
+  padding-top: 5.5em;
+  font-family: BMW-light,Arial;
+  color: var(--color-black);
+}
+
+/*main 1e section*/
+
+main section:nth-of-type(1){
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: left;
+}
+
+main section:nth-of-type(1) h1{
+  font-weight: 100;
+}
+
+main section:nth-of-type(1) h2{
+  font-weight: 100;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+/*carousel*/
+
+main section:nth-of-type(1) button{
+  margin-top: 1em;
+  border: none;
+  background-color: transparent;
+  width: 9em;
+  font-family: BMW-bold,Arial;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+main section:nth-of-type(1) b{
+  font-family: BMW-bold,Arial;
+}
+
+main section:nth-of-type(1) h3{
+  margin-top: 1.5em;
+  font-family: BMW-light,Arial;
+  font-size: 1em;
+}
+
+/*main 2e section*/
+
+main section:nth-of-type(2) select{
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+  border: none;
+  border-bottom: solid 3px;
+  border-color: var(--color-lightgrey);
+  width: 100%;
+  height: 3.5em;
+  font-family: BMW-bold,Arial;
+  font-size: 1.1em;
+  margin-top: 1em;
+}
+
+main section:nth-of-type(2) h2{
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+/*grid item rootste*/
+
+main section:nth-of-type(2) li:nth-of-type(1) img{
+  width: 65%;
+  margin-left: 3em;
+  margin-top: 2.5em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(1) h3{
+  margin-top: 2.5em;
+  font-size: 1em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(1) h4{
+  font-size: 0.7em;
+  font-family: BMW-bold,Arial;
+  color: var(--color-darkgrey);
+  margin-top: 0.5em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(1) h5{
+  margin-top: 0.3em;
+  font-family: BMW-light,Arial;
+  font-weight: 100;
+}
+
+main section:nth-of-type(2) li:nth-of-type(1) button{
+  position: absolute;
+  right: 17em;
+  top: 39em;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+/*grid item 1e kleine*/
+
+main section:nth-of-type(2) li:nth-of-type(2){
+  margin-top: 3em;
+  margin-left: 1em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 1em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(2) img:nth-of-type(1){
+  width: 7em;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  justify-self: right;
+}
+
+main section:nth-of-type(2) li:nth-of-type(2) img:nth-of-type(2){
+  width: 3em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(2) h3{
+  font-size: 1em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(2) h5{
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+main section:nth-of-type(2) li:nth-of-type(2) button{
+  width: 1em;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  font-weight: 100;
+  position: absolute;
+  right: 7em;
+  top: 46.2em;
+}
+
+/*grid item 2e kleine*/
+
+
+
+/*grid item 3e kleine*/
+
+main section:nth-of-type(2) li:nth-of-type(4){
+  margin-top: 3em;
+  margin-left: 1em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 1em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(4) img:nth-of-type(1){
+  width: 7em;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  justify-self: right;
+}
+
+main section:nth-of-type(2) li:nth-of-type(4) img:nth-of-type(2){
+  width: 3em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(4) h3{
+  font-size: 1em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(4) h5{
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+main section:nth-of-type(2) li:nth-of-type(4) button{
+  width: 1em;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  font-weight: 100;
+  position: absolute;
+  right: 7em;
+  top: 49.2em;
+}
+
+/*grid item 4e kleine*/
+
+
+
+/*main 3e section*/
+
+main section:nth-of-type(3){
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: left;
+}
+
+main section:nth-of-type(3) a{
+  border-bottom: solid 2px;
+  border-color: var(--color-lightgrey);
+  padding: 1em;
+  padding-left: 0em;
+}
+
+main section:nth-of-type(3) a::after{
+  content: ">";
+  position: absolute;
+  right: 2em;
+  scale: 150%;
+}
+
+main section:nth-of-type(3) h2{
+  margin-top: 2em;
+  font-size: 1em;
 }
