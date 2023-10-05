@@ -32,35 +32,26 @@ checkbox.addEventListener('change', function () {
 
 var openButton = document.getElementById("hamOpen");
 
-// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 openButton.onclick = openMenu;
 
-// stap 3: voeg in de functie een class toe aan de nav
 function openMenu() {
-  // zoek de nav op
+
   var Menutje = document.getElementById("menu");
-  // voeg class toe aan nav
+
   Menutje.classList.remove("toonMenu");
 }
 
-/************************************/
-/* menu sluiten met de sluit button */
-/************************************/
-
-/* JOUW CODE HIER - stap 5 */
-
-// stap 1 - zoek sluiten button op
 var sluitButton = document.getElementById("hamMod");
 
-// stap 2 - laat die button luisteren naar kliks
 sluitButton.onclick = sluitMenu;
 
-// stap 3 - in de functie verwijder de class van de nav
 function sluitMenu() {
 
   var Menutje = document.getElementById("menu");
   Menutje.classList.add("toonMenu");
 }
+
+/*de vriend van mijn zus is ex CMD'er en die heeft mij ontzettend geholpen met het maken van het hamburger menu*/
 
 window.onkeydown = handleKeydown;
 

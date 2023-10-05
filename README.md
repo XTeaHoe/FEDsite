@@ -299,4 +299,7 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   4. https://css-tricks.com/how-to-create-a-skip-to-content-link/
      bovenstaande links heb ik geraadpleegd als het gaat om de skip to main content link
 
+  5. tot slot heb ik de studentassistenten en een ex cmd'er te danken voor de hulp bij het laten werken van het hamburger menu.
+  overigens heb ik nog een aantal keren gekeken naar de codepens van de lessen als geheugensteuntje.
+
 </details>
