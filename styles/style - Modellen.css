@@ -13,6 +13,12 @@
   src: url(../fonts/BMWTypeNext-Bold.woff2) format('woff2');
 }
 
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: unset;
+  }
+}
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -40,6 +46,32 @@ body {
   --color-pureblack:#000000;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-white:#3f3f3f;
+  --color-lightgrey:#090909;
+  --color-darkgrey:#999999;
+  --color-black:#d9d9d9;
+  --color-blue:#1C69D4;
+  --color-pureblack:#ffffff;
+  }
+}
+
+#Skip{
+  clip-path: inset(50%);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  height: 1%;
+  width: 1%;
+}
+
+#Skip:focus{
+  clip-path: none;
+  height: 2em;
+  width: 15em;
+}
+
 ul{
   list-style: none;
   padding: 0%;
@@ -56,12 +88,41 @@ main{
   color: var(--color-black);
 }
 
+input{
+  position: absolute;
+  scale: 200%;
+  left: 2em;
+  top: 5.5em;
+}
+
+input:hover {
+  animation-name:checkbox-animation;
+  animation-duration:1s;
+}
+
+@keyframes checkbox-animation {
+  0% {
+    scale:1;
+  }
+  33% {
+    scale:4;
+  }
+
+  66% {
+    scale:1;
+  }
+
+  100% {
+    scale:4;
+  }
+}
+
 /*main 1e section*/
 
 main section:nth-of-type(1){
   display: grid;
   grid-template-columns: 1fr;
-  align-items: left;
+  align-items: start;
 }
 
 main section:nth-of-type(1) h1{
@@ -75,6 +136,26 @@ main section:nth-of-type(1) h2{
 }
 
 /*carousel*/
+
+main section:nth-of-type(1) ul{
+  margin-top: 1em;
+  display: flex;
+  overflow-x: auto;
+  column-gap: 1em;
+}
+
+main section:nth-of-type(1) ul li button{
+  margin-top: 0em;
+  border: solid 0.1em; 
+  border-color: var(--color-darkgrey);
+  color: var(--color-darkgrey);
+  background-color: transparent;
+  width: 12em;
+  font-family: BMW-bold,Arial;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.5em;
+}
 
 main section:nth-of-type(1) button{
   margin-top: 1em;
@@ -95,6 +176,9 @@ main section:nth-of-type(1) h3{
   font-family: BMW-light,Arial;
   font-size: 1em;
 }
+
+/*voor de carousel heb ik Vivanne om hulp gevraagd, gelukkig was dit niet heel lastig
+en had ik haar hulp alleen maar nodig bij een paar regeltjes code*/
 
 /*main 2e section*/
 
@@ -146,7 +230,7 @@ main section:nth-of-type(2) li:nth-of-type(1) h5{
 main section:nth-of-type(2) li:nth-of-type(1) button{
   position: absolute;
   right: 17em;
-  top: 39em;
+  top: 41.2em;
   background-color: transparent;
   border: none;
   font-size: 1em;
@@ -191,13 +275,47 @@ main section:nth-of-type(2) li:nth-of-type(2) button{
   font-size: 1em;
   font-weight: 100;
   position: absolute;
-  right: 7em;
-  top: 46.2em;
+  right: 8.5em;
+  top: 48.3em;
 }
 
 /*grid item 2e kleine*/
 
+main section:nth-of-type(2) li:nth-of-type(3){
+  margin-top: 3em;
+  margin-left: 1em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 1em;
+}
 
+main section:nth-of-type(2) li:nth-of-type(3) img:nth-of-type(1){
+  width: 7em;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  justify-self: right;
+}
+
+main section:nth-of-type(2) li:nth-of-type(3) h3{
+  font-size: 1em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(3) h5{
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+main section:nth-of-type(2) li:nth-of-type(3) button{
+  width: 1em;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  font-weight: 100;
+  position: absolute;
+  right: 8.3em;
+  top: 54em;
+}
 
 /*grid item 3e kleine*/
 
@@ -207,7 +325,6 @@ main section:nth-of-type(2) li:nth-of-type(4){
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 1em;
 }
 
 main section:nth-of-type(2) li:nth-of-type(4) img:nth-of-type(1){
@@ -215,17 +332,21 @@ main section:nth-of-type(2) li:nth-of-type(4) img:nth-of-type(1){
   grid-row-start: 1;
   grid-row-end: 4;
   justify-self: right;
+  padding-right: 0.5em;
 }
 
 main section:nth-of-type(2) li:nth-of-type(4) img:nth-of-type(2){
   width: 3em;
+  padding-left: 0.5em;
 }
 
 main section:nth-of-type(2) li:nth-of-type(4) h3{
   font-size: 1em;
+  padding-left: 0.2em;
 }
 
 main section:nth-of-type(2) li:nth-of-type(4) h5{
+  padding-left: 0.5em;
   grid-row-start: 3;
   grid-row-end: 4;
 }
@@ -237,20 +358,53 @@ main section:nth-of-type(2) li:nth-of-type(4) button{
   font-size: 1em;
   font-weight: 100;
   position: absolute;
-  right: 7em;
-  top: 49.2em;
+  right: 8.5em;
+  top: 62.6em;
 }
 
 /*grid item 4e kleine*/
 
+main section:nth-of-type(2) li:nth-of-type(5){
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 1em;
+}
 
+main section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(1){
+  width: 8em;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  justify-self: left;
+}
+
+main section:nth-of-type(2) li:nth-of-type(5) h3{
+  font-size: 1em;
+}
+
+main section:nth-of-type(2) li:nth-of-type(5) h5{
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+main section:nth-of-type(2) li:nth-of-type(5) button{
+  width: 1em;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  font-weight: 100;
+  position: absolute;
+  right: 8.3em;
+  top: 68.5em;
+}
 
 /*main 3e section*/
 
 main section:nth-of-type(3){
   display: grid;
   grid-template-columns: 1fr;
-  align-items: left;
+  align-items: start;
 }
 
 main section:nth-of-type(3) a{

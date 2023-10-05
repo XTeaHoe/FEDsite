@@ -158,7 +158,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben inmiddels al wat verder als het gaat om de html en css van de eerste pagina. Maar meer dan dat heb im helaas nog niet
+
+  vrijwel alles ging soepel, alleen ik moest nog wel een beetje inkomen als het gaat om de css. Het is immers alweer een tijdje terug
+
+  <img src="./images/voortgang1.PNG">
 
 
   ### Agenda voor meeting
@@ -214,7 +218,12 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik heb veel voor elkaar gekregen in de afgelopen week, alleen aan mijne tweede pagina is nog een hoop te doen
+
+  het css'en van mijn eerste pagina ging vrij soepel nadat mijn geheugen weer opgefrist was
+
+  <img src="./images/voortgang2.PNG">
+  <img src="./images/voortgang3.PNG">
 
 
   ### Agenda voor meeting
@@ -239,10 +248,8 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - voor mijn tweede pagina kan ik veel code herhalen
+  - ik hoef een aantal complexe onderdelen niet uit te werken
 
 </details>
 
@@ -284,8 +291,12 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. ChatGPT, vragen over elementen stijlen die ik niet goed begreep zoals details en summary's, grids of select en options
+     ChatGPT hielp mij ook met de javascript voor het vergroter van de font size met de checkbox
+  2. Vivanne gevraagd over de nodige html en css code bij de carrousel van mijn filters 
+
+  3. https://www.a11yproject.com/posts/skip-nav-links/
+  4. https://css-tricks.com/how-to-create-a-skip-to-content-link/
+     bovenstaande links heb ik geraadpleegd als het gaat om de skip to main content link
 
 </details>

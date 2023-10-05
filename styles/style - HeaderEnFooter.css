@@ -3,6 +3,12 @@
   src: url(../fonts/BMWTypeNext-Light.woff2) format('woff2');
 }
 
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: unset;
+  }
+}
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -25,6 +31,17 @@
   --color-pureblack:#000000;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-white:#000000;
+  --color-lightgrey:#090909;
+  --color-darkgrey:#999999;
+  --color-black:#d9d9d9;
+  --color-blue:#1C69D4;
+  --color-pureblack:#ffffff;
+  }
+}
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -43,7 +60,7 @@ header{
   width: 100%;
 }
 
-nav{
+nav, #menuheader{
   display: flex;
   align-items: center;
   padding-top: 0.5em;
@@ -52,28 +69,116 @@ nav{
   background-image: linear-gradient(rgba(0, 0, 0, 0.46), transparent);
 }
 
-nav > a img{
+#menu{
+  z-index: +3;
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+.toonMenu{
+  translate: 100%;
+}
+
+#menu li{
+  place-items: start;
+}
+
+#menu ul li a{
+  text-decoration: none;
+  color: var(--color-darkgrey);
+  font-family: BMW-bold,Arial;
+  padding-left: 1em;
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+}
+
+#menu ul li .pijl::after{
+  content: ">";
+  position: absolute;
+  right: 2em;
+  scale: 150%;
+}
+
+#menuul{
+  color: var(--color-darkgrey);
+  font-family: BMW-bold,Arial;
+  font-weight: 900;
+  padding-left: 2.4em;
+  margin-top: 1.9em;
+}
+
+#menuul li{
+  margin-bottom: 0.5em;
+}
+
+#menuheader{
+  background-image: none;
+  background-color: var(--color-white);
+  width: 100%;
+  border-bottom: solid 5px;
+  border-color: var(--color-lightgrey);
+}
+
+nav ul, #menuheader ul{
+  display: flex;
+}
+
+#navMod{
+  background-image: none;
+}
+
+nav > a img, #menuheader > a img{
   width: 2.3em;
   height: 2.3em;
 }
 
-nav > aside img{
+nav > aside img, #menuheader > aside img{
   width: 1.2em;
   height: 1.2em;
 }
 
-nav ul a img{
+nav ul a img, #menuheader ul a img{
   width: 1.2em;
   height: 1.2em;
 }
 
-nav a{
+nav a, #menuheader a{
 padding: 0.5em;
 padding-right: 1.5em;
 }
 
-nav a:first-of-type {
+nav a:first-of-type, #menuheader a:first-of-type{
   flex-grow: 1;
+}
+
+#logoMod{
+   background-color: var(--color-black);
+   border-radius: 5em;
+}
+
+#personMod{
+  filter: brightness(0%);
+}
+
+#cartMod{
+  filter: brightness(0%);
+}
+
+#glassMod{
+  filter: brightness(0%);
+}
+
+#hamMod{
+  filter: brightness(0%);
+}
+
+#darkAside img{
+  filter: brightness(100%)
 }
 
 /*footer*/
@@ -149,6 +254,11 @@ details summary::before {
 details[open] summary::before {
   transform: rotate(180deg);
 }
+
+/*voor dit stuk heb ik chat gpt om hulp gevraagd als het gaat om het
+sluiten van het vorige details element wanneer een nieuwe geopend word
+
+"how can i make it so if one details is opened that if another one was open, it will close automatically?"*/
 
 details a{
   text-decoration: none;

@@ -16,24 +16,46 @@
 
 <body>
 	<h1>Welkom op de officiele website van BMFake</h1>
+	<a href="#main" id="Skip">Skip naar belangrijkste inhoud</a>
 	<header>
 		<nav>
-			<a href="#"><img src="images/wit-logo.svg" alt=""></a>
+			<a href="#"><img src="images/wit-logo.svg" alt="home"></a>
 			<ul>
-				<a href="#"><img src="images/icon-person.png" alt="account/inloggen"></a>
-				<a href="#"><img src="images/icon-cart.png" alt=""></a>
-				<a href="#"><img src="images/icon-glass.png" alt=""></a>
+				<li><a href="#"><img src="images/icon-person.png" alt="account/inloggen"></a></li>
+				<li><a href="#"><img src="images/icon-cart.png" alt="winkelwagen"></a></li>
+				<li><a href="#"><img src="images/icon-glass.png" alt="zoeken"></a></li>
 			</ul>
 			<aside>
-				<img src="images/icon-hamburger.png" alt="">
+				<img src="images/icon-hamburger.png" alt="navigatie" id="hamOpen">
 			</aside>
 		</nav>
 	</header>
-	<main>
+	<main id="main">
+		<div id="menu" class="toonMenu">
+			<div id="menuheader">
+				<a href="#"><img src="images/wit-logo.svg" alt="home" id="logoMod"></a>
+				<ul>
+					<li><a href="#"><img src="images/icon-person.png" alt="account/inloggen" id="personMod"></a></li>
+					<li><a href="#"><img src="images/icon-cart.png" alt="winkelwagen" id="cartMod"></a></li>
+					<li><a href="#"><img src="images/icon-glass.png" alt="zoeken" id="glassMod"></a></li>
+				</ul>
+				<aside>
+					<img src="images/icon-hamburger.png" alt="navigatie" id="hamMod">
+				</aside>
+			</div>
+			<ul id="menuul">
+				<li><a href="./modellen.html">Modellen</a></li>
+				<li><a class="pijl">Elektrisch</a></li>
+				<li><a>Configurator & prijzen</a></li>
+				<li><a class="pijl">Aanschaf & lease</a></li>
+				<li><a class="pijl">Meer BMW</a></li>
+			</ul>
+		</div>
+		<input type="checkbox">
 		<section>
 			<h2>DE ELEKTRI-SCHE BMW MODELLEN.</h2>
 			<h3>DIT JAAR NOG RIJDEN.</h3>
-			<img src="./images/elektische-bmw-modellen-teaser-homepage-3000x3000px_nl_3to4.webp" alt="">
+			<img src="./images/elektische-bmw-modellen-teaser-homepage-3000x3000px_nl_3to4.webp" alt="Een afbeelding van 5 grauw gekleurde elektrische BMW auto's geparkeerd voor een mistige berg in de achtergrond">
 			<a href="#">Ontdek meer</a>
 			<a href="#">Direct beschikbaar</a>
 		</section>
@@ -42,17 +64,17 @@
 			<h3>UW RIJPLEZIER</h3>
 			<ul>
 				<li>
-					<img src="images/auto-icon-1.PNG" alt="">
+					<img src="images/auto-icon-1.PNG" alt="auto icoon met een plus">
 					<h4>Zelf samenstellen</h4>
 					<a href="#">Configurator en prijzen</a>
 				</li>
 				<li>
-					<img src="images/auto-icon-2.PNG" alt="">
+					<img src="images/auto-icon-2.PNG" alt="auto iccon met een auto er achter">
 					<h4>Direct beschikbaar</h4>
 					<a href="#">Ontdek meer</a>
 				</li>
 				<li>
-					<img src="images/auto-icon-3.PNG" alt="">
+					<img src="images/auto-icon-3.PNG" alt="auto icoon met een vergrootglas">
 					<h4>Vind uw BMW Occasion</h4>
 					<a href="#">Ontdek meer</a>
 				</li>
@@ -63,13 +85,13 @@
 				<li>
 					<h2>DE NIEUWE BMW i5.</h2>
 					<h3>COMPLEET. NIEUW.</h3>
-					<img src="images/bmw-i5-series-homepage-teaser.jpeg" alt="">
+					<img src="images/bmw-i5-series-homepage-teaser.jpeg" alt="een afbeelding van de elektrische BMW i5 sedan auto">
 					<a href="#">Ontdek meer</a>
 				</li>
 				<li>
 					<h2>LEASE OF FINANCIER UW ELEKTRISCHE BMW</h2>
 					<h3>BMW FINANCIAL SERVICES</h3>
-					<img src="images/ix-home-stage.jpeg" alt="">
+					<img src="images/ix-home-stage.jpeg" alt="een afbeelding van de elektrische BMW i x SUV">
 					<a href="#">Ontdek meer</a>
 				</li>
 			</ul>
@@ -77,7 +99,7 @@
 		<section>
 			<h2>BMW SERVICES.</h2>
 			<h3>RELAX. WE CARE.</h3>
-			<img src="images/DI22_000103676_16to9.webp" alt="">
+			<img src="images/DI22_000103676_16to9.webp" alt="een afbeelding van een vrouw in de zon die loopt met achter haar een grijze BMW auto">
 			<p>Bij geweldige rijprestaties en rijplezier hoort ook geweldig onderhoud.
 				Alleen de experts van BMW weten hoe ze uw BMW alle aandacht kunnen
 				geven die deze nodig heeft. Ons doel is dat u te allen tijde ontspannen
@@ -140,10 +162,10 @@
 				<a href="#">Veelgestelde vragen</a>
 			</details>
 			<ul>
-				<li><a><img src="images/facebook-hover@2x.png.asset.1584959819913.png" alt=""></a></li>
-				<li><a><img src="images/instagram-hover@2x.png.asset.1584959820398.png" alt=""></a></li>
-				<li><a><img src="images/youtube-hover@2x.png.asset.1584959824385.png" alt=""></a></li>
-				<li><a><img src="images/linkedin-hover@2x.png.asset.1584959821340.png" alt=""></a></li>
+				<li><a><img src="images/facebook-hover@2x.png.asset.1584959819913.png" alt="facebook"></a></li>
+				<li><a><img src="images/instagram-hover@2x.png.asset.1584959820398.png" alt="instagram"></a></li>
+				<li><a><img src="images/youtube-hover@2x.png.asset.1584959824385.png" alt="youtube"></a></li>
+				<li><a><img src="images/linkedin-hover@2x.png.asset.1584959821340.png" alt="linkedin"></a></li>
 			</ul>
 		</section>
 		<section>

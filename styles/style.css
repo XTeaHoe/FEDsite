@@ -13,6 +13,11 @@
   src: url(../fonts/BMWTypeNext-Bold.woff2) format('woff2');
 }
 
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: unset;
+  }
+}
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -40,6 +45,38 @@ body {
   --color-pureblack:#000000;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-white:#3f3f3f;
+  --color-lightgrey:#090909;
+  --color-darkgrey:#999999;
+  --color-black:#d9d9d9;
+  --color-blue:#1C69D4;
+  --color-pureblack:#ffffff;
+  }
+}
+
+
+#Skip{
+  clip-path: inset(50%);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  height: 1%;
+  width: 1%;
+}
+
+#Skip:focus{
+  clip-path: none;
+  height: 2em;
+  width: 15em;
+}
+
+/*voor de skip to main content knop heb ik een beetje moeten googlen maar ik had het al gauw geregeld
+
+https://www.a11yproject.com/posts/skip-nav-links/
+https://css-tricks.com/how-to-create-a-skip-to-content-link/*/
+
 ul{
   list-style: none;
   padding: 0%;
@@ -54,6 +91,35 @@ main section{
 main{
   font-family: BMW-light,Arial;
   color: var(--color-black);
+}
+
+input{
+  position: absolute;
+  scale: 200%;
+  left: 2em;
+  top: 5.5em;
+}
+
+input:hover {
+  animation-name:checkbox-animation;
+  animation-duration:1s;
+}
+
+@keyframes checkbox-animation {
+  0% {
+    scale:1;
+  }
+  33% {
+    scale:4;
+  }
+
+  66% {
+    scale:1;
+  }
+
+  100% {
+    scale:4;
+  }
 }
 
 h2{

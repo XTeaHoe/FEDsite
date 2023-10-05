@@ -6,7 +6,7 @@
 	<meta name="author" content="Tygo van Zanden">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>BMFake</title>
+	<title>BMFake Modellen</title>
 	
 	<link href="styles/style - HeaderEnFooter.css" rel="stylesheet">
 	<link href="styles/style - Modellen.css" rel="stylesheet">
@@ -16,25 +16,53 @@
 
 <body>
 	<header>
-		<nav>
-			<a href="#"><img src="images/wit-logo.svg" alt=""></a>
+		<a href="#main" id="Skip">Skip naar belangrijkste inhoud</a>
+		<nav id="navMod">
+			<a href="./index.html"><img src="images/wit-logo.svg" alt="home" id="logoMod"></a>
 			<ul>
-				<a href="#"><img src="images/icon-person.png" alt="account/inloggen"></a>
-				<a href="#"><img src="images/icon-cart.png" alt=""></a>
-				<a href="#"><img src="images/icon-glass.png" alt=""></a>
+				<li><a href="#"><img src="images/icon-person.png" alt="account/inloggen" id="personMod"></a></li>
+				<li><a href="#"><img src="images/icon-cart.png" alt="winkelwagen" id="cartMod"></a></li>
+				<li><a href="#"><img src="images/icon-glass.png" alt="zoeken" id="glassMod"></a></li>
 			</ul>
 			<aside>
-				<img src="images/icon-hamburger.png" alt="">
+				<img src="images/icon-hamburger - Copy.png" alt="navigatie" id="hamOpen">
 			</aside>
 		</nav>
 	</header>
-	<main>
+	<main id="main">
+		<div id="menu" class="toonMenu">
+			<div id="menuheader">
+				<a href="#"><img src="images/wit-logo.svg" alt="home" id="logoMod"></a>
+				<ul>
+					<li><a href="#"><img src="images/icon-person.png" alt="account/inloggen" id="personMod"></a></li>
+					<li><a href="#"><img src="images/icon-cart.png" alt="winkelwagen" id="cartMod"></a></li>
+					<li><a href="#"><img src="images/icon-glass.png" alt="zoeken" id="glassMod"></a></li>
+				</ul>
+				<aside>
+					<img src="images/icon-hamburger.png" alt="navigatie" id="hamMod">
+				</aside>
+			</div>
+			<ul id="menuul">
+				<li><a href="#">Modellen</a></li>
+				<li><a href="#" class="pijl">Elektrisch</a></li>
+				<li><a href="#">Configurator & prijzen</a></li>
+				<li><a href="#" class="pijl">Aanschaf & lease</a></li>
+				<li><a href="#" class="pijl">Meer BMW</a></li>
+			</ul>
+		</div>
+		<input type="checkbox">
 		<section>
 			<h1>ALLE BMW MODELLEN.</h1>
 			<h2>FILTER</h2>
-			carousel
+			<ul>
+				<li><button>+ Plug-in Hybride</button></li>
+				<li><button>+ Elektrisch</button></li>
+				<li><button>+ BMW M</button></li>
+				<li><button>+ BMW i</button></li>
+				<li><button>+ Nieuw</button></li>
+			</ul>
 			<button>> Toon meer filters</button>
-			<h3><b>27</b> voertuigen gevonden</h3>
+			<h3><b>5</b> voertuigen gevonden</h3>
 		</section>
 		<section>
 			<select>
@@ -56,34 +84,34 @@
 			<h2>2</h2>
 			<ol>
 				<li>
-					<img src="./images/2Auto-1.PNG" alt="">
+					<img src="./images/2Auto-1.PNG" alt="een afbeeling van een paarse BMW 2 series Coupé">
 					<h3>BMW 2 Serie Coupé</h3>
 					<h4>BENZINE • DIESEL</h4>
 					<h5>vanaf € 49.637</h5>
 					<button>ⓘ</button>
 				</li>
 				<li>
-					<img src="./images/2Auto-2.PNG" alt="">
+					<img src="./images/2Auto-2.PNG" alt="een afbeelding van een zwarte BMW m 2 series coupé">
 					<img src="./images/M-Logo.png" alt="">
 					<h3>BMW M240i Coupé</h3>
 					<h5>vanaf € 77.237</h5>
 					<button>ⓘ</button>
 				</li>
 				<li>
-					<img src="./images/2Auto-3.PNG" alt="">
+					<img src="./images/2Auto-3.PNG" alt="een afbeelding van een lichtblauw BMW 2 series gran coupé">
 					<h3>BMW 2 Serie Gran Coupé</h3>
 					<h5>vanaf € 42.220</h5>
 					<button>ⓘ</button>
 				</li>
 				<li>
-					<img src="./images/2Auto-4.PNG" alt="">
+					<img src="./images/2Auto-4.PNG" alt="een afbeelding van een zwarte BMW m 2 series x drive gran coupé">
 					<img src="./images/M-Logo.png" alt="">
 					<h3>BMW M235i xDrive Gran Coupé</h3>
 					<h5>vanaf € 68.819</h5>
 					<button>ⓘ</button>
 				</li>
 				<li>
-					<img src="./images/2Auto-5.PNG" alt="">
+					<img src="./images/2Auto-5.PNG" alt="een afbeelding van een witte elektrische BMW 2 series active tourer ">
 					<h3>BMW 2 Serie Active Tourer</h3>
 					<h5>vanaf € 41.925</h5>
 					<button>ⓘ</button>
@@ -160,10 +188,10 @@
 				<a href="#">Veelgestelde vragen</a>
 			</details>
 			<ul>
-				<li><a><img src="images/facebook-hover@2x.png.asset.1584959819913.png" alt=""></a></li>
-				<li><a><img src="images/instagram-hover@2x.png.asset.1584959820398.png" alt=""></a></li>
-				<li><a><img src="images/youtube-hover@2x.png.asset.1584959824385.png" alt=""></a></li>
-				<li><a><img src="images/linkedin-hover@2x.png.asset.1584959821340.png" alt=""></a></li>
+				<li><a><img src="images/facebook-hover@2x.png.asset.1584959819913.png" alt="facebook"></a></li>
+				<li><a><img src="images/instagram-hover@2x.png.asset.1584959820398.png" alt="instagram"></a></li>
+				<li><a><img src="images/youtube-hover@2x.png.asset.1584959824385.png" alt="youtube"></a></li>
+				<li><a><img src="images/linkedin-hover@2x.png.asset.1584959821340.png" alt="linkedin"></a></li>
 			</ul>
 		</section>
 		<section>
@@ -180,5 +208,5 @@
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>
