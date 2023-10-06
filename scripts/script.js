@@ -38,7 +38,7 @@ function openMenu() {
 
   var Menutje = document.getElementById("menu");
 
-  Menutje.classList.remove("toonMenu");
+  Menutje.classList.remove("schuilMenu");
 }
 
 var sluitButton = document.getElementById("hamMod");
@@ -48,7 +48,7 @@ sluitButton.onclick = sluitMenu;
 function sluitMenu() {
 
   var Menutje = document.getElementById("menu");
-  Menutje.classList.add("toonMenu");
+  Menutje.classList.add("schuilMenu");
 }
 
 /*de vriend van mijn zus is ex CMD'er en die heeft mij ontzettend geholpen met het maken van het hamburger menu*/
@@ -58,6 +58,6 @@ window.onkeydown = handleKeydown;
 function handleKeydown(event) {
   if (event.key == "Escape") {
     var Menutje = document.getElementById("menu");
-    Menutje.classList.add("toonMenu");
+    Menutje.classList.add("schuilMenu");
   }
 }

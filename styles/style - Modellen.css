@@ -43,7 +43,12 @@ body {
   --color-darkgrey:#666666;
   --color-black:#262626;
   --color-blue:#1C69D4;
+  --color-darkblue:#11438a;
   --color-pureblack:#000000;
+  --color-orange:#ff9900;
+  --color-mred:#e22718;
+  --color-mcobalt:#003c78;
+  --color-mcyan:#0066b1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,7 +58,12 @@ body {
   --color-darkgrey:#999999;
   --color-black:#d9d9d9;
   --color-blue:#1C69D4;
+  --color-darkblue:#11438a;
   --color-pureblack:#ffffff;
+  --color-orange:#ff9900;
+  --color-mred:#e22718;
+  --color-mcobalt:#003c78;
+  --color-mcyan:#0066b1;
   }
 }
 
@@ -88,11 +98,15 @@ main{
   color: var(--color-black);
 }
 
-input{
+label{
   position: absolute;
-  scale: 200%;
   left: 2em;
-  top: 5.5em;
+  top: 4em;
+  font-family: BMW-bold,Arial;
+}
+
+input{
+  scale: 200%;
 }
 
 input:hover {
@@ -115,6 +129,14 @@ input:hover {
   100% {
     scale:4;
   }
+}
+
+:focus{
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--color-mred),
+    0 0 0 4px var(--color-mcobalt),
+    0 0 0 6px var(--color-mcyan);
 }
 
 /*main 1e section*/
@@ -187,7 +209,7 @@ main section:nth-of-type(2) select{
   top: 0;
   background-color: var(--color-white);
   border: none;
-  border-bottom: solid 3px;
+  border-bottom: solid 0.1875em;
   border-color: var(--color-lightgrey);
   width: 100%;
   height: 3.5em;
@@ -228,13 +250,14 @@ main section:nth-of-type(2) li:nth-of-type(1) h5{
 }
 
 main section:nth-of-type(2) li:nth-of-type(1) button{
-  position: absolute;
   right: 17em;
   top: 41.2em;
   background-color: transparent;
   border: none;
   font-size: 1em;
   font-weight: 100;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 /*grid item 1e kleine*/
@@ -274,9 +297,10 @@ main section:nth-of-type(2) li:nth-of-type(2) button{
   border: none;
   font-size: 1em;
   font-weight: 100;
-  position: absolute;
   right: 8.5em;
   top: 48.3em;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 /*grid item 2e kleine*/
@@ -312,9 +336,10 @@ main section:nth-of-type(2) li:nth-of-type(3) button{
   border: none;
   font-size: 1em;
   font-weight: 100;
-  position: absolute;
   right: 8.3em;
   top: 54em;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 /*grid item 3e kleine*/
@@ -357,9 +382,10 @@ main section:nth-of-type(2) li:nth-of-type(4) button{
   border: none;
   font-size: 1em;
   font-weight: 100;
-  position: absolute;
-  right: 8.5em;
+  right: 8.3em;
   top: 62.6em;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 /*grid item 4e kleine*/
@@ -394,7 +420,6 @@ main section:nth-of-type(2) li:nth-of-type(5) button{
   border: none;
   font-size: 1em;
   font-weight: 100;
-  position: absolute;
   right: 8.3em;
   top: 68.5em;
 }
@@ -408,7 +433,7 @@ main section:nth-of-type(3){
 }
 
 main section:nth-of-type(3) a{
-  border-bottom: solid 2px;
+  border-bottom: solid 0.125em;
   border-color: var(--color-lightgrey);
   padding: 1em;
   padding-left: 0em;

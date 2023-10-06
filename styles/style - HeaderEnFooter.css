@@ -28,7 +28,12 @@
   --color-darkgrey:#666666;
   --color-black:#262626;
   --color-blue:#1C69D4;
+  --color-darkblue:#11438a;
   --color-pureblack:#000000;
+  --color-orange:#ff9900;
+  --color-mred:#e22718;
+  --color-mcobalt:#003c78;
+  --color-mcyan:#0066b1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,7 +43,12 @@
   --color-darkgrey:#999999;
   --color-black:#d9d9d9;
   --color-blue:#1C69D4;
+  --color-darkblue:#11438a;
   --color-pureblack:#ffffff;
+  --color-orange:#ff9900;
+  --color-mred:#e22718;
+  --color-mcobalt:#003c78;
+  --color-mcyan:#0066b1;
   }
 }
 
@@ -47,6 +57,15 @@
 /****************/
 
 /* jouw code */
+
+header a:hover, footer a:hover{
+  text-decoration: underline;
+  filter: brightness(70%);
+}
+
+header a:active, footer a:active{
+  background-color: var(--color-lightgrey);
+}
 
 ul{
   list-style: none;
@@ -80,7 +99,7 @@ nav, #menuheader{
   transition-duration: 0.3s;
 }
 
-.toonMenu{
+.schuilMenu{
   translate: 100%;
 }
 
@@ -95,6 +114,11 @@ nav, #menuheader{
   padding-left: 1em;
   margin-top: 0.6em;
   margin-bottom: 0.5em;
+}
+
+#menu ul li:nth-child(1):hover{
+  text-decoration: underline;
+  filter: brightness(70%);
 }
 
 #menu ul li .pijl::after{
@@ -120,7 +144,7 @@ nav, #menuheader{
   background-image: none;
   background-color: var(--color-white);
   width: 100%;
-  border-bottom: solid 5px;
+  border-bottom: solid 0.3125em;
   border-color: var(--color-lightgrey);
 }
 
@@ -215,6 +239,11 @@ font-size: 0.9em;
 text-decoration: none;
 color: var(--color-black);
 }
+
+footer section:nth-of-type(1) a:hover{
+  text-decoration: underline;
+  filter: brightness(70%);
+  }
 
 footer section:nth-of-type(1) a:nth-of-type(2){
   grid-row-start: 2;
@@ -321,4 +350,9 @@ footer section:nth-of-type(3) a{
   text-decoration: none;
   color: var(--color-black);
   font-size: 1em;
+}
+
+footer section:nth-of-type(3) a:hover{
+  text-decoration: underline;
+  filter: brightness(70%);
 }
